@@ -1,2 +1,2 @@
-"C:\Program Files\Python37\python.exe" "C:\Users\C21Joshua.Block\Desktop\Capstone\tlescript.py"
+python ".\Desktop\tlescript.py"
 pause
