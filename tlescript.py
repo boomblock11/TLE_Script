@@ -80,7 +80,7 @@ satellite2 = satellite.QueryInterface(STKObjects.IAgSatellite)
 #Set data
 satellite2.SetPropagatorType(STKObjects.ePropagatorStkExternal)
 exProp = satellite2.Propagator.QueryInterface(STKObjects.IAgVePropagatorStkExternal)
-exProp.Filename=r'.\ephemeris.e'
+exProp.Filename=r'C:\Users\FS6GSOps\Desktop\TLE_Script\ephemeris.e'
 exProp.Propagate()
 
 #Generate the tle
