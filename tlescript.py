@@ -13,7 +13,7 @@ from comtypes.client import GetActiveObject
 
 
 #Read in GPS data
-with open('C:\\Users\\C21Joshua.Block\\Desktop\\Capstone\\APID02310.csv') as csvfile:
+with open(r'.\Desktop\APID02310.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     next(readCSV)
     ephemLines = []
@@ -80,7 +80,7 @@ satellite2 = satellite.QueryInterface(STKObjects.IAgSatellite)
 #Set data
 satellite2.SetPropagatorType(STKObjects.ePropagatorStkExternal)
 exProp = satellite2.Propagator.QueryInterface(STKObjects.IAgVePropagatorStkExternal)
-exProp.Filename='C:\\Users\\C21Joshua.Block\\Desktop\\Capstone\\ephemeris.e'
+exProp.Filename=r'.\Desktop\ephemeris.e'
 exProp.Propagate()
 
 #Generate the tle
