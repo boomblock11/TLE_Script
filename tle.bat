@@ -1,2 +1,2 @@
-python ".\Desktop\tlescript.py"
+python ".\tlescript.py"
 pause
