@@ -86,11 +86,11 @@ exProp.Propagate()
 #Generate the tle
 unitsCorr="Units_Set * Connect Date ISO-YMD"
 root.ExecuteCommand(unitsCorr)
-TLECmd = f"GenerateTLE */Satellite/TestSatellite Sampling \"{starttime}\" \"{endtime}\" 60.0 \"{endtime}\" 43815 20 .000000001"
-#TLECmd = f"GenerateTLE */Satellite/TestSatellite Point \"{endtime}\" 43815 20 .0000000001"
+TLECmd = f"GenerateTLE */Satellite/FalconSAT-6 Sampling \"{starttime}\" \"{endtime}\" 60.0 \"{endtime}\" 43815 20 .000000001"
+#TLECmd = f"GenerateTLE */Satellite/FalconSAT-6 Point \"{endtime}\" 43815 20 .0000000001"
 root.ExecuteCommand(TLECmd)
 
 #Display TLE
-reportTLE = "ReportCreate */Satellite/TestSatellite Type Display Style \"TLE\""
+reportTLE = "ReportCreate */Satellite/FalconSAT-6 Type Display Style \"TLE\""
 root.ExecuteCommand(reportTLE)
 #reportAccess = "ReportCreate */Satellite/Shuttle Type Display Style \"Access\" File \"c:\Data\shuttlewalreport.txt\" AccessObject */Facility/Wallops"
